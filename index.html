@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
 <title>Kahorng</title>
 
 <meta name="theme-color" content="#0a1120">
+
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Kahorng">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
 <link rel="manifest" href="manifest.webmanifest">
 
-<link rel="icon" sizes="512x512" href="https://i.ibb.co/MyFQSJGQ/kahorng-icon-512-1.png">
+<link rel="icon" type="image/png" href="https://i.ibb.co/MyFQSJGQ/kahorng-icon-512-1.png">
 <link rel="apple-touch-icon" href="https://i.ibb.co/MyFQSJGQ/kahorng-icon-512-1.png">
 
 <style>
@@ -23,55 +24,33 @@ body{
     padding:0;
     width:100%;
     height:100%;
-    background:#0a1120;
     overflow:hidden;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    background:#0a1120;
 }
 
-body{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:white;
-}
-
-.spinner{
-    width:42px;
-    height:42px;
-    border:4px solid rgba(255,255,255,.2);
-    border-top-color:white;
-    border-radius:50%;
-    animation:spin 1s linear infinite;
-    margin:auto;
-}
-
-p{
-    margin-top:18px;
-    text-align:center;
-    opacity:.8;
-}
-
-@keyframes spin{
-    to{transform:rotate(360deg);}
+iframe{
+    position:fixed;
+    inset:0;
+    width:100%;
+    height:100%;
+    border:none;
+    display:block;
+    background:#0a1120;
 }
 </style>
 </head>
 
 <body>
 
-<div>
-    <div class="spinner"></div>
-    <p>Opening Kahorng...</p>
-</div>
+<iframe
+    src="https://script.google.com/macros/s/AKfycbyPfh6QQkWy4RGyu_IMHuGlsUMnvLnitumSPBvBr--tydSoO0qRQ4Xy-dHPAO1MQSQd/exec"
+    allow="clipboard-write">
+</iframe>
 
 <script>
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./sw.js').catch(console.error);
 }
-
-window.location.replace(
-'https://script.google.com/macros/s/AKfycbyPfh6QQkWy4RGyu_IMHuGlsUMnvLnitumSPBvBr--tydSoO0qRQ4Xy-dHPAO1MQSQd/exec'
-);
 </script>
 
 </body>
