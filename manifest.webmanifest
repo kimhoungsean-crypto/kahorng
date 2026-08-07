@@ -1,0 +1,19 @@
+{
+  "name": "Kahorng",
+  "short_name": "Kahorng",
+  "description": "Personal Finance Manager",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a1120",
+  "theme_color": "#0a1120",
+  "icons": [
+    {
+      "src": "https://i.ibb.co/MyFQSJGQ/kahorng-icon-512-1.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
